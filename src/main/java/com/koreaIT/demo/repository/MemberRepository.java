@@ -21,5 +21,9 @@ public interface MemberRepository {
 
 	public Member getMemberByNameAndEmail(String name, String email);
 
+	public void doModify(int loginedMemberId, String nickname, String cellphoneNum, String email);
+
+	public void doPasswordModify(int loginedMemberId, String loginPw);
+
 
 }
